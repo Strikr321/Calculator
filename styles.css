@@ -1,0 +1,81 @@
+/* CSS file for the calculator app */
+
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101010;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #202040;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    /* Set a fixed width for the calculator */
+}
+
+/* Display area */
+.display {
+    background-color: #404060;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.display input {
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    background-color: #404060;
+    color: #fff;
+}
+
+/* Buttons grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* Styling for buttons */
+button {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #303050;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Clear button spans all four columns */
+.clear {
+    grid-column: span 4;
+}
+
+/* Equals sign moves to the fifth row, fourth column */
+.equals {
+    grid-row: 5;
+    grid-column: 3;
+}
+
+/* Styling for operator buttons */
+.operator {
+    background-color: #604080;
+}
+
+/* Hover and active states for buttons */
+button:hover {
+    background-color: #505070;
+}
+
+button:active {
+    background-color: #403050;
+}
